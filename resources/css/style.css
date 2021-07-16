@@ -459,6 +459,8 @@ input[type=checkbox]{
 
 /*Footer*/
 footer{
+    padding: 30px;
+    height: 180px;
     background-color: #333;
 }
 .footer-nav{
@@ -501,5 +503,44 @@ footer{
    border: 0;
    color: #888;
 }
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+
+    color: #fff;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    padding: 5px;
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram{
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+.ion-social-twitter:hover{
+    color: #00aced;
+}
+.ion-social-googleplus:hover{
+    color: #dd4b39;
+}
+.ion-social-instagram:hover{
+    color: #517fa4;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+}
+
+
 
 
