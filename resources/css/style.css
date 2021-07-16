@@ -55,8 +55,8 @@ header{
 h1,
 h2,
 h3{
-   
-    font-weight: 300;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
    
    
@@ -66,19 +66,19 @@ h1{
     margin-top: 0;
     margin-bottom: 20px;
     color: #fff;
-    font-size: 240%;
+    font-size: 220%;
     word-spacing: 4px;
     letter-spacing: 1px;
 }
 h2{
-   font-size: 108%;
+   font-size: 90%;
    word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
 }
 h3{
-    font-size: 110%;
+    font-size: 90%;
     margin-bottom: 15px;
 }
 
@@ -98,9 +98,19 @@ h2:after {
     margin-left: 15%;
 }
 .box p{
-    font-size: 90%;
+    padding: 2%;
+    font-size: 80%;
     line-height: 145%;
 }
+
+/*    ICONS    */
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
 .btn:link,
 .btn:visited {
    display: inline-block;
@@ -186,4 +196,46 @@ h2:after {
 .main-nav li a:hover,
 .main-nav li a:active{
     border-bottom: 2px solid #e67e22;
+}
+
+/* Features*/ 
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+
+
+/* meals*/
+.section-meals{
+    width: 100%;
+    margin-top: 5%;
+   padding: 0;
+}
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+
+}
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-photo{
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.meal-photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
 }
