@@ -133,6 +133,7 @@ h2:after {
     margin-top: -5px;
 }
 /*Links*/
+
 a:link,
 a:active{
     color: #e67e22;
@@ -150,7 +151,8 @@ a:active{
 
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
    display: inline-block;
    padding: 10px 30px;
    font-weight: 300;
@@ -163,7 +165,9 @@ a:active{
 
 
 .btn-full:link,
-.btn-full:visited
+.btn-full:visited,
+input[type=submit]
+
 {
     background-color: #e67e22;
     border: 1px solid #e67e22;
@@ -179,7 +183,9 @@ a:active{
 }
 
 .btn:hover,
-.btn:active{
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
    background-color: #cf6d17;
 }
 .btn-full:hover,
@@ -423,3 +429,77 @@ cite img{
 .col span-1-of-3{
     float: right;
 }
+
+
+/*contact*/
+
+.contact-form{
+  width: 60%;
+  margin: 0 auto;
+
+}
+
+input[type=text],
+select[type=email],
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+
+}
+textarea{
+ height: 100px;
+}
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {outline: none;}
+
+/*Footer*/
+footer{
+    background-color: #333;
+}
+.footer-nav{
+    
+    padding-left: 60px;
+    list-style: none;
+    float: left;
+
+}
+.social-icons{
+    color: #e67e22;
+    float: right;
+    list-style: none;
+    
+}
+.social-links{
+    padding: 6px;
+    margin-right: 180px;
+    float: right;
+}
+.social-links li{
+    float: right;
+}
+.footer-nav li,
+.social-icons li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0;
+}
+
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+   text-decoration: none;
+   border: 0;
+   color: #888;
+}
+
+
