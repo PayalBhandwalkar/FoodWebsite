@@ -251,6 +251,19 @@ input[type=submit]:active{
 .main-nav li a:active{
     border-bottom: 2px solid #e67e22;
 }
+/* mobile nav*/
+
+.mobile-nav-icon{
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon i{
+    font-size: 100%;
+    margin-left: 0;
+}
+
 
 /* sticky nav*/
 .sticky {
@@ -260,6 +273,7 @@ input[type=submit]:active{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.98);
     box-shadow: 0 2px 2px #e8e8e8;
+     z-index: 9999;
 }
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited
@@ -582,6 +596,24 @@ footer p{
     text-align: center;
 }
 
+/*animation*/
 
+.js--wp-1,
+.js--wp-2,
+.js--wp-3{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
 
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
 
+.js--wp-1.animated ,
+.js--wp-2.animated ,
+.js--wp-3.animated 
+{
+    opacity: 1;
+}
